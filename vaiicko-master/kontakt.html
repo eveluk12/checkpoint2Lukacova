@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="public/css/styleKontakt.css">
+    <meta charset="UTF-8">
+    <title> Kontakt </title>
+</head>
+<body>
+<div class="selekcia">
+    <div class="navig">
+        <img src="images/logo.png" class="logo" alt="logo" id="logo"><label class="name">VPA</label>
+        <nav>
+            <ul id="menuRol">
+                <li><a href="eshop.html">E-shop</a></li>
+                <li><a href="oNas.html">O nás</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <img src="images/menu.png" class="menu" alt="menu" onclick="menu()">
+        <img src="images/line.png" class="line" alt="line">
+        <img src="images/login.png" class="icon" alt="login">
+        <img src="images/eshop.png" class="icon" alt="kosik">
+    </div>
+
+
+    <h2> Kedy sme tu pre teba? </h2>
+    <div class="otvaracie">
+        <h2> Otváracie hodiny </h2>
+        <table class="otvHodiny">
+            <tr id="pondelok" title="Otvorené v pondelok 6-18 hod">
+                <td class="den">Pondelok</td>
+                <td>06:00</td>
+                <td>-</td>
+                <td>18:00</td>
+            </tr>
+            <tr id="utorok" title="Otvorené v utorok 6-18 hod">
+                <td class="den">Utorok</td>
+                <td>06:00</td>
+                <td>-</td>
+                <td>18:00</td>
+            </tr>
+            <tr id="streda" title="Otvorené v stredu 6-18 hod">
+                <td class="den">Streda</td>
+                <td>07:00</td>
+                <td>-</td>
+                <td>18:00</td>
+            </tr>
+            <tr id="stvrtok" title="Otvorené v štvrtok 6-18 hod">
+                <td class="den">Štvrtok</td>
+                <td>06:00</td>
+                <td>-</td>
+                <td>18:00</td>
+            </tr>
+            <tr id="piatok" title="Otvorené v piatok 6-18 hod">
+                <td class="den">Piatok</td>
+                <td>07:00</td>
+                <td>-</td>
+                <td>15:00</td>
+            </tr>
+
+            <tr id="soNe" title="Zatvorené v sobotu a nedeľu">
+                <td class="den">Sobota a nedeľa</td>
+                <td></td>
+                <td></td>
+                <td>Zatvorené</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div class="kontInfo">
+        <h2> Kde nás nájdeš? </h2>
+        <p> Nájdeš nás na tejto adrese:</p>
+        <address> Zvolenská cesta 23, 974 01 Banská Bystrica </address>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2632.9354040830917!2d19.1398947!3d48.706715599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47153febbab0663b%3A0x1f9cfc7bf5d84257!2sZvolensk%C3%A1%20cesta%2023%2C%20974%2001%20Bansk%C3%A1%20Bystrica!5e0!3m2!1ssk!2ssk!4v1698076473894!5m2!1ssk!2ssk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="back"></div>
+    </div>
+
+
+</div>
+
+<script>
+    var menuRol = document.getElementById("menuRol");
+    menuRol.style.maxHeight = "0px";
+    function menu() {
+        if(menuRol.style.maxHeight==="0px") {
+            menuRol.style.maxHeight = "130px";
+        }
+        else {
+            menuRol.style.maxHeight = "0px";
+        }
+    }
+
+    var logo = document.getElementById("logo")
+    logo.addEventListener("click", function() {
+        window.location.href = "domov.html";
+    });
+
+</script>
+
+<footer>
+    <p>© 2023</p>
+</footer>
+</body>
+</html>

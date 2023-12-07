@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="public/css/styleEshop.css">
+    <meta charset="UTF-8">
+    <title>E-shop</title>
+</head>
+<body>
+<div class="selekcia">
+    <div class="navig">
+        <img src="images/logo.png" class="logo" alt="logo" id="logo"><label class="name">VPA</label>
+        <nav>
+            <ul id="menuRol">
+                <li><a href="eshop.html">E-shop</a></li>
+                <li><a href="oNas.html">O nás</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <img src="images/menu.png" class="menu" alt="menu" onclick="menu()">
+        <img src="images/line.png" class="line" alt="line">
+        <img src="images/login.png" class="icon" alt="login">
+        <img src="images/eshop.png" class="icon" alt="kosik">
+    </div>
+
+    <section class="produkty" id="products">
+        <div class="nazov">
+            <h2>Naše produkty</h2>
+        </div>
+
+        <section class="category">
+            <div class="categBox">
+                <h3>Brzdový systém</h3>
+            </div>
+
+            <div class="categBox">
+                <h3>Kvapaliny</h3>
+            </div>
+
+            <div class="categBox">
+                <h3>Výfukový systém</h3>
+            </div>
+
+        </section>
+
+        <!-- spojazdnit eshop -->
+        <div class="zoznam">
+            <div class="produkt">
+                <img src="images/pruzina.jpg" alt="pruzina">
+                <h3>Pružina podvozku</h3>
+                <div class="popis">
+                    <span>28,25€</span>
+                    <a href="#">Do košíka</a>
+                </div>
+            </div>
+
+            <div class="produkt">
+                <img src="images/kotuc.jpg" alt="kotuc">
+                <h3>Brzdový kotúč</h3>
+                <div class="popis">
+                    <span>25,05€</span>
+                    <a href="#">Do košíka</a>
+                </div>
+            </div>
+
+            <div class="produkt">
+                <img src="images/olej.png" alt="olej">
+                <h3>Motorový olej</h3>
+                <div class="popis">
+                    <span>37,75€</span>
+                    <a href="#">Do košíka</a>
+                </div>
+            </div>
+
+            <div class="produkt">
+                <img src="images/okena.jpg" alt="kvapalina">
+                <h3>Kvapalina do ostrekovačov</h3>
+                <div class="popis">
+                    <span>3,45€</span>
+                    <a href="#">Do košíka</a>
+                </div>
+            </div>
+
+            <div class="produkt">
+                <img src="images/akumulator.jpg" alt="bateria">
+                <h3>Autobatéria</h3>
+                <div class="popis">
+                    <span>81,34€</span>
+                    <a href="#">Do košíka</a>
+                </div>
+            </div>
+
+            <div class="produkt">
+                <img src="images/tlmic.jpg" alt="tlmic">
+                <h3>Tlmič výfuku</h3>
+                <div class="popis">
+                    <span>84,55€</span>
+                    <a href="#">Do košíka</a>
+                </div>
+            </div>
+
+            <div class="produkt">
+                <img src="images/filter.jpg" alt="filter">
+                <h3>Olejový filter</h3>
+                <div class="popis">
+                    <span>7,15€</span>
+                    <a href="#">Do košíka</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+<script>
+    var menuRol = document.getElementById("menuRol");
+    menuRol.style.maxHeight = "0px";
+    function menu() {
+        if(menuRol.style.maxHeight==="0px") {
+            menuRol.style.maxHeight = "130px";
+        }
+        else {
+            menuRol.style.maxHeight = "0px";
+        }
+    }
+
+    var logo = document.getElementById("logo")
+    logo.addEventListener("click", function() {
+        window.location.href = "domov.html";
+    });
+</script>
+<footer>
+    <p>© 2023</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.selekcia {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navig {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.selekcia .navig a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.logo {
+    width: 80px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.name {
+    font-size: 20px;
+    margin-left: 20px;
+    font-family: "Georgia Pro Black", serif;
+}
+
+.menu {
+    width: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.icon {
+    width: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.icon:hover{
+    width: 30px;
+    transition: width 0.5s;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    margin-top: -10px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    color: #607a33;
+}
+
+.obsah {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.left {
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.left h2{
+    font-size: 54px;
+    font-family: Cambria, serif;
+    color: darkolivegreen;
+}
+
+.left p {
+    color: black;
+    font-weight: 100;
+    margin: 30px 0;
+    font-size: 18px;
+    text-align: justify;
+    font-family: Georgia, sans-serif;
+}
+
+.left img {
+    width: 100%;
+    display: flex;
+}
+
+.left::after {
+    content: '';
+    margin-top: 45px;
+    margin-left: 40px;
+    width: 60%;
+    height: 1.5px;
+    background: darkslategrey;
+    position: absolute;
+    left: -40px;
+    top: 20px;
+}
+
+
+.left .servis::after {
+    content: '';
+    margin-top: 485px;
+    margin-left: 40px;
+    width: 60%;
+    height: 1.5px;
+    background: darkslategrey;
+    position: absolute;
+    left: -40px;
+    top: 20px;
+}
+
+.right {
+    flex-basis: 40%;
+    position: relative;
+
+}
+
+.right h2 {
+    font-size: 54px;
+    font-family: Cambria, serif;
+    color: darkolivegreen;
+}
+
+.right p {
+    color: black;
+    font-weight: 100;
+    margin: 30px 0;
+    font-size: 18px;
+    text-align: justify;
+    font-family: Georgia, sans-serif;
+}
+
+.right img {
+    width: 100%;
+    display: flex;
+    border-radius: 15%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: darkslategrey;
+}
+
+.right::after {
+    content: '';
+    margin-top: 45px;
+    margin-left: 40px;
+    width: 60%;
+    height: 1.5px;
+    background: darkslategrey;
+    position: absolute;
+    left: -40px;
+    top: 20px;
+}
+
+
+@media only screen and (max-width: 750px) {
+    nav ul {
+        width: 25%;
+        background: #5f7474;
+        position: absolute;
+        border-bottom-left-radius: 20%;
+        top: 100px;
+        right: 10px;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    nav ul li a {
+        color: black;
+        font-weight: bold;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .icon, .line {
+        display: none;
+    }
+
+    #menuRol {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .obsah {
+        flex-direction: column;
+    }
+
+    .obsah .left img{
+        margin-bottom: 20px;
+    }
+    .obsah .right h2 {
+        margin-left: 50px;
+    }
+
+    .obsah .right p {
+        margin-left: 50px;
+    }
+
+    .obsah .right img {
+        align-items: center;
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    .right::after {
+        display: none;
+    }
+    .left::after {
+        display: none;
+    }
+    .left .servis::after {
+        display: none;
+    }
+}
+

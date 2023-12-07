@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.selekcia {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navig {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.selekcia .navig a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.logo {
+    width: 80px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.name {
+    font-size: 20px;
+    margin-left: 20px;
+    font-family: "Georgia Pro Black", serif;
+}
+
+.menu {
+    width: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.icon {
+    width: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.icon:hover{
+    width: 30px;
+    transition: width 0.5s;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    margin-top: -10px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    color: #607a33;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Georgia Pro Black", serif;
+    font-size: 34px;
+}
+
+.otv {
+    justify-content: space-around;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.otv p {
+    font-weight: 100;
+    margin: 30px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.kontInfo {
+    justify-content: space-around;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.kontInfo h2 {
+    text-align: center;
+    font-family: "Georgia Pro Black", serif;
+    font-size: 34px;
+}
+
+.kontInfo p {
+    color: yellowgreen;
+    font-weight: 100;
+    margin: 30px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.kontInfo  iframe {
+    border-radius: 2%;
+}
+
+.kontInfo address {
+    margin-bottom: 40px;
+}
+
+.kontInfo iframe {
+    border: darkslategray;
+}
+
+
+@media only screen and (max-width: 750px) {
+    nav ul {
+        width: 25%;
+        background: #5f7474;
+        position: absolute;
+        border-bottom-left-radius: 20%;
+        top: 100px;
+        right: 10px;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    nav ul li a {
+        color: black;
+        font-weight: bold;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .icon, .line {
+        display: none;
+    }
+
+    #menuRol {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+}

@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.selekcia {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navig {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.selekcia .navig a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.logo {
+    width: 80px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.name {
+    font-size: 20px;
+    margin-left: 20px;
+    font-family: "Georgia Pro Black", serif;
+}
+
+.menu {
+    width: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.icon {
+    width: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.icon:hover{
+    width: 30px;
+    transition: width 0.5s;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    margin-top: -10px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    color: #607a33;
+}
+
+.nazov {
+    text-align: center;
+}
+
+.nazov h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+    color: darkslategray;
+    font-family: "Georgia Pro Black", serif;
+}
+
+
+.zoznam {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.zoznam h3 {
+    font-size: 20px;
+    font-family: "Georgia Pro Black", serif;
+    text-transform: uppercase;
+}
+
+.zoznam .produkt {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.zoznam img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+    padding: 10px;
+    border-radius: 8%;
+}
+
+.zoznam .produkt .popis {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+
+.zoznam .produkt .popis span {
+    font-family: "Georgia Pro Black", serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: #8abb29;
+}
+
+
+.zoznam .produkt .popis a {
+    text-decoration: none;
+    color: white;
+    font-family: "Arial Black", serif;
+    padding: 0 16px;
+    background-color: darkolivegreen;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.zoznam .produkt button {
+    text-decoration: none;
+    color: white;
+    font-family: "Arial Black", serif;
+    background-color: darkslategray;
+}
+.category {
+    width: 100%;
+    padding: 60px 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.category .categBox {
+    width: 150px;
+    height: 30px;
+    background-color: #668181;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category .categBox h3 {
+    font-size: 13px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+    nav ul {
+        width: 25%;
+        background: #5f7474;
+        position: absolute;
+        border-bottom-left-radius: 20%;
+        top: 100px;
+        right: 10px;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    nav ul li a {
+        color: black;
+        font-weight: bold;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .icon, .line {
+        display: none;
+    }
+
+    #menuRol {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+}
+
+
+
